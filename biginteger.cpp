@@ -52,7 +52,7 @@ std::ostream& operator<<(std::ostream &out, const BigInteger &x){
     return out;
 }
 
-std::istream& operator>>(std::istream &in,const BigInteger &x){
+std::istream& operator>>(std::istream &in,BigInteger &x){
     std::string s;
     if(!(in>>s)) return in;
     x=s;
